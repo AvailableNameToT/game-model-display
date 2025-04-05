@@ -1,0 +1,17 @@
+{
+    "gameName": "spineGame",
+    "model": {
+        "engine": "spine",
+        // 保留字段，暂时没用
+        // "version": "3.9",
+        // 默认播放动作
+        "initialAnimation": "animationName",
+        // spine模型字段，意义参考spine官方文档
+        // 简单来说，false不行就改成true
+        "premultipliedAlpha": false
+    },
+    "nameMap": {
+        // key为文件夹名称，value为要显示的名称
+        "characterName1": "角色名称"
+    }
+}

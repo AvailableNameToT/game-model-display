@@ -1,0 +1,29 @@
+{
+    "gameName": "MementoMori",
+    "model": {
+        "engine": "live2d",
+        "idleMotionGroup": "Idle.anim",
+        "useBackgroundModel": true,
+        "backgroundMotionGroup": "EF_Idle.anim",
+        "backgroundModelHiddenParts": ["Character"]
+    },
+    "nameMap": {
+        "CHR_000026": "梅林",
+        "CHR_000027": "科迪"
+    },
+    "special": {
+        "CHR_000026": {
+            "modelHiddenParts": ["front_effect_G"],
+            "backgroundModelHiddenParts": [
+                "staff_G",
+                "mein_G",
+                "fairy_G"
+            ]
+        },
+        "CHR_000027": {
+            "backgroundModelHiddenParts": [
+                "Part32"
+            ]
+        }
+    }
+}

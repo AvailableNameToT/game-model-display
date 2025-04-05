@@ -1,0 +1,12 @@
+{
+    "gameName": "武娘",
+    "model": {
+        "engine": "spine",
+        "initialAnimation": "idle",
+        "premultipliedAlpha": false
+    },
+    "nameMap": {
+        "10_gumu": "古墓",
+        "28_qingcheng": "青城"
+    }
+}

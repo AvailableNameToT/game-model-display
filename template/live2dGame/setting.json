@@ -1,0 +1,32 @@
+{
+    "gameName": "live2dGame",
+    "model": {
+        "engine": "live2d",
+        // 默认播放动作
+        "idleMotionGroup": "motionGroupName1",
+        // 可选，模型要隐藏的part
+        "modelHiddenParts": ["partName1"],
+        // 可选，背景是否单独使用模型
+        "useBackgroundModel": true,
+        // useBackgroundModel为true时必选，背景模型播放的动作
+        // 注意motionGroupName2的FadeInTime、FadeOutTime要设置为0
+        "backgroundMotionGroup": "motionGroupName2",
+        // useBackgroundModel为true时必选，背景模型要隐藏的part
+        "backgroundModelHiddenParts": ["partName2"]
+    },
+    "nameMap": {
+        // key为文件夹名称，value为要显示的名称
+        "characterName1": "角色名称"
+    },
+    // 可选，针对某个模型的单独设定
+    "special": {
+        // key为characterName，value为json，其key与model中的相同
+        // 针对具体的角色，直接用这里的设置覆盖game的设置
+        "characterName1": {
+            "backgroundModelHiddenParts": [
+                "partName2",
+                "partName3"
+            ]
+        }
+    }
+}

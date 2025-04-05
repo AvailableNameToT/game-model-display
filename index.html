@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏模型</title>
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+    <script src="./lib/js/bootstrap.min.js"></script>
+    <script src="./lib/js/charData.js"></script>
+    <script src="./lib/js/jquery.min.js"></script>
+    <script src="./lib/js/live2d.min.js"></script>
+    <script src="./lib/js/live2dcubismcore.min.js"></script>
+    <script src="./lib/js/pixi.min.js"></script>
+    <script src="./lib/js/pixilive2ddisplay.js"></script>
+    <script src="./lib/js/spine-webgl.js"></script>
+    <script src="data.js"></script>
+    <style>
+        /* 抽屉页面样式 */
+        #sidebar {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #f8f9fa;
+            transition: right 0.1s ease;
+            z-index: 1001;
+        }
+
+        #sidebar.show {
+            right: 0;
+        }
+
+        /* 关闭按钮样式 */
+        #closeSidebar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1010;
+            display: none; /* 初始状态隐藏 */
+        }
+
+        #sidebar.show + #closeSidebar {
+            display: block; /* 当 #sidebar 显示时，显示 */
+        }
+
+        #live2dSelector {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1003;
+            /*不能通过类似closeSidebar使用 #sidebar.show + #closeSidebar 实现显示和隐藏*/
+            display: none; /* 初始状态隐藏 */
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        #spineSelector {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1003;
+            /*不能通过类似closeSidebar使用 #sidebar.show + #closeSidebar 实现显示和隐藏*/
+            display: none; /* 初始状态隐藏 */
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        #modelCanvas {
+            /*height: 100%;*/
+            width: 100%;
+        }
+
+        /* 项目框样式 */
+        .character-box {
+            border: 1px solid #ccc;
+            padding: 10px 10px 0;
+            margin: 10px;
+            display: flex;
+            vertical-align: top;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .character-box p {
+            word-break: break-word;
+        }
+
+        /* 项目容器样式 */
+        .character-container {
+            margin-bottom: 20px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 项目展示区域 -->
+        <div id="gameList"></div>
+    </div>
+
+    <!-- 抽屉页面 -->
+    <div id="sidebar">
+        <canvas id="modelCanvas"></canvas>
+    </div>
+
+    <button id="closeSidebar" class="btn btn-secondary">关闭</button>
+    <div id="live2dSelector">
+        <span>动作：</span>
+        <select id="live2dMotionList"></select>
+    </div>
+    <div id="spineSelector">
+        <span>动作：</span>
+        <select id="spineAnimationList"></select>
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
