@@ -7,6 +7,22 @@ $(document).ready(function () {
     // 在spine的各个相关函数之间传递数据
     let spineVariable = {};
 
+    // 侧边按钮点击事件
+    $("#sidebarButton").click(function () {
+        if (nowCharacter === null) return
+        $("#sidebar").addClass("show");
+        const now_game = nowCharacter["game"];
+        const game_data = resourceData[now_game];
+        if (game_data["model"]["engine"] === "live2d") {
+            $("#live2dSelector").css({"display": "block"});
+            showLive2dModel();
+        }
+        if (game_data["model"]["engine"] === "spine") {
+            $("#spineSelector").css({"display": "block"});
+            showSpineModel();
+        }
+    });
+
     // 关闭抽屉按钮点击事件
     $("#closeSidebar").click(function () {
         $("#live2dSelector").css({"display": "none"})
@@ -39,20 +55,12 @@ $(document).ready(function () {
                 characterContainer.append(characterBox);
 
                 image.click(function () {
+                    $("#sidebarButton img").attr("src", imagePath);
+                    $("#sidebarButton img").attr("alt", character);
                     nowCharacter = {
                         "character": character,
                         "game": game
                     };
-                    $("#sidebar").addClass("show");
-                    const game_data = resourceData[game];
-                    if (game_data["model"]["engine"] === "live2d") {
-                        $("#live2dSelector").css({"display": "block"});
-                        showLive2dModel();
-                    }
-                    if (game_data["model"]["engine"] === "spine") {
-                        $("#spineSelector").css({"display": "block"});
-                        showSpineModel();
-                    }
                 });
                 $("#gameList").append(characterContainer);
             })
