@@ -7,12 +7,19 @@ Display live2d and spine model in web
 
 This project is not a model storage repository. Please find models elsewhere.
 
+本人不关心语音，所以本项目未测试语音功能是否正常
+
+I am not concerned about sounds, so this project did not test sounds function.
+
 ![](./docs/main.png)
 
 ## 分支介绍 Branch Introduce
 - main
+
   项目的主要分支，会一直维护
+
 - fixed-img-button-open-sidebar
+
   通过一个右下角按钮来展示角色，这样主页面就可以做各种别的东西
 
 ## 项目结构 Code Structure
@@ -33,6 +40,14 @@ main.js
 本项目未能实现同时播放Live2d模型两个MotionGroup中的Motion，采用了一个取巧的方法：分别用两个模型分别同时播放Motion。这带来了一些遮挡问题，导致实际效果与游戏中的效果有一些偏差。
 
 据说在cubism 5中可以通过创建两个layer，分别播放两个Motion来解决这个问题。目前pixi-live2d-display还不支持cubism 5，我没有能力和兴趣去应用cubism 5。如果以后有方便的js cubism 5方案，我会进行适配。
+
+
+## 已知的Bug
+（写到这里说明我解决不了）
+
+1. pixi使用的webgl上下文清理存在问题，来回切换live2d模型和spine模型（即频繁创建清理pixi实例）会导致webgl上下文过多，内存占用高。
+
+2. 切换live2d模型时有一定几率模型不动，需要重新加载
 
 ## 使用方法 Usages
 ### 前置准备 Prepare

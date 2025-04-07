@@ -89,12 +89,15 @@ $(document).ready(function () {
         // jQuery选择器返回的是一个jQuery对象，而不是原生的DOM元素。而PIXI.Application的view参数需要的是原生的HTMLCanvasElement。
         // const canvas = $("#modelCanvas");
         const canvas = document.getElementById("modelCanvas");
-        pixiapp = new PIXI.Application({
-            view: canvas,
-            autoStart: true,
-            resizeTo: canvas,
-        });
-        pixiapp.renderer.backgroundColor = 0xf8f9fa;
+        if (!pixiapp) {
+            pixiapp = new PIXI.Application({
+                view: canvas,
+                autoStart: true,
+                resizeTo: canvas,
+            });
+            pixiapp.renderer.backgroundColor = 0xf8f9fa;
+        }
+        pixiapp.stage.removeChildren();
 
         const game = nowCharacter["game"];
         const character = nowCharacter["character"];
@@ -115,7 +118,9 @@ $(document).ready(function () {
             internalModel.coreModel.setPartOpacityById(part, 0)
         }
 
-        pixiapp.stage.removeChildren();
+        // 关闭呼吸
+        internalModel.updateNaturalMovements = function () {}
+
         // 这里也许以后需要一项setting来获取这个0.5
         const scale = pixiapp.view.width / internalModel.width * 0.5;
         live2dModel.anchor.set(0.5, 0);
@@ -156,6 +161,7 @@ $(document).ready(function () {
 
     function clearLive2dModel() {
         if (pixiapp) {
+            // fixme 目前这里无法清除WebGL contexts，来回切换会有告警：Too many active WebGL contexts.
             // 销毁所有子元素、渲染器、并解绑事件
             pixiapp.destroy({
                 children: true,   // 销毁所有显示对象

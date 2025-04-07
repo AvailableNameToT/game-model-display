@@ -12,6 +12,7 @@
         // 注意motionGroupName2的FadeInTime、FadeOutTime要设置为0
         "backgroundMotionGroup": "motionGroupName2",
         // useBackgroundModel为true时必选，背景模型要隐藏的part
+        // 填写不存在的part不会报错
         "backgroundModelHiddenParts": ["partName2"]
     },
     "nameMap": {

@@ -5,13 +5,181 @@
         "idleMotionGroup": "Idle.anim",
         "useBackgroundModel": true,
         "backgroundMotionGroup": "EF_Idle.anim",
-        "backgroundModelHiddenParts": ["Character"]
+        "backgroundModelHiddenParts": [
+            "Character",
+            "character",
+            "chara"
+        ]
     },
     "nameMap": {
-        "CHR_000026": "梅林",
-        "CHR_000027": "科迪"
+        "CHR_000001": "莫妮卡",
+        "CHR_000002": "伊利亚",
+        "CHR_000003": "艾莉丝",
+        "CHR_000004": "洛基",
+        "CHR_000005": "索尔缇娜",
+        "CHR_000006": "阿姆蕾特",
+        "CHR_000007": "芬里尔",
+        "CHR_000008": "佛罗伦斯",
+        "CHR_000009": "索尼娅",
+        "CHR_000010": "墨瑟",
+        "CHR_000011": "夏乐",
+        "CHR_000012": "阿丽安萝德",
+        "CHR_000013": "狄奥多拉",
+        "CHR_000014": "佩特拉",
+        "CHR_000015": "萨宾娜",
+        "CHR_000016": "小苍兰",
+        "CHR_000017": "爱沐尔",
+        "CHR_000018": "琳恩",
+        "CHR_000019": "贝尔",
+        "CHR_000020": "黛安",
+        "CHR_000021": "静",
+        "CHR_000022": "萨拉",
+        "CHR_000023": "罗莎莉",
+        "CHR_000024": "莉布拉",
+        "CHR_000025": "艾薇",
+        "CHR_000026": "梅琳",
+        "CHR_000027": "科迪",
+        "CHR_000028": "妮娜",
+        "CHR_000029": "茉缇",
+        "CHR_000030": "光士",
+        "CHR_000031": "加姆",
+        "CHR_000032": "诗寇蒂",
+        "CHR_000033": "切尔娜",
+        "CHR_000034": "索缇莉亚",
+        "CHR_000035": "咪咪",
+        "CHR_000036": "托波波",
+        "CHR_000037": "哈索儿",
+        "CHR_000038": "奥莉维亚",
+        "CHR_000039": "普莉玛维拉",
+        "CHR_000040": "卡罗",
+        "CHR_000041": "娜塔夏",
+        "CHR_000042": "福尔蒂娜",
+        "CHR_000043": "克尔柏洛丝",
+        "CHR_000044": "露莎卡",
+        "CHR_000045": "埃尔芙琳黛",
+        "CHR_000046": "露娜琳德",
+        "CHR_000047": "瓦尔丽黛",
+        "CHR_000048": "A.A.",
+        "CHR_000049": "奥菲莉娅",
+        "CHR_000050": "阿姆斯特朗",
+        "CHR_000051": "苏菲亚",
+        "CHR_000052": "希维",
+        "CHR_000053": "维拉",
+        "CHR_000054": "戚风",
+        "CHR_000055": "蕾雅",
+        "CHR_000056": "克劳蒂亚",
+        "CHR_000057": "史黛拉",
+        "CHR_000058": "亚缇",
+        "CHR_000059": "埃尔",
+        "CHR_000060": "菲雅",
+        "CHR_000061": "伊利亚",
+        "CHR_000062": "普莉希拉",
+        "CHR_000063": "帕拉底亚",
+        "CHR_000064": "吉薇艾尔",
+        "CHR_000065": "哀音",
+        "CHR_000066": "艾莉丝",
+        "CHR_000067": "丽瑟丝",
+        "CHR_000068": "菲尼",
+        "CHR_000069": "辉夜",
+        "CHR_000070": "萨宾娜",
+        "CHR_000071": "墨瑟",
+        "CHR_000072": "科迪",
+        "CHR_000073": "爱沐尔",
+        "CHR_000074": "托波波",
+        "CHR_000075": "摩嘉娜",
+        "CHR_000076": "优妮",
+        "CHR_000077": "米娜修玛力",
+        "CHR_000078": "朝日",
+        "CHR_000079": "瑟露莉亚",
+        "CHR_000080": "蜜拉",
+        "CHR_000081": "玉",
+        "CHR_000082": "亚历珊卓",
+        "CHR_000084": "莉兹",
+        "CHR_000085": "玛提尔德",
+        "CHR_000086": "玫莉亚",
+        "CHR_000088": "罗莎莉",
+        "CHR_000093": "阿尔托莉亚",
+        "CHR_000095": "妮娜",
+        "CHR_000096": "阿姆蕾特",
+        "CHR_000105": "娜塔夏",
+        "CHR_000106": "尤里卡",
+        "CHR_000107": "索尔缇娜",
+        "CHR_000108": "露娜琳德",
+        "CHR_000109": "厄瑞涅",
+        "CHR_000111": "姬璃",
+        "CHR_000112": "静",
+        "CHR_000113": "鹭丝堤卡",
+        "CHR_000114": "宝拉",
+        "CHR_000115": "波普莉"
     },
     "special": {
+        "CHR_000002": {
+            "backgroundModelHiddenParts": [
+                "Character",
+                "EF_Weapon"
+            ]
+        },
+        "CHR_000004": {
+            "backgroundModelHiddenParts": ["Part31"]
+        },
+        "CHR_000005": {
+            "useBackgroundModel": false
+        },
+        "CHR_000006": {
+            "backgroundModelHiddenParts": ["Part37"]
+        },
+        "CHR_000007": {
+            "backgroundModelHiddenParts": ["Fenrir"]
+        },
+        "CHR_000010": {
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000012": {
+            "backgroundModelHiddenParts": ["Part3"]
+        },
+        "CHR_000013": {
+            "backgroundModelHiddenParts": ["Part26"]
+        },
+        "CHR_000015": {
+            "backgroundModelHiddenParts": ["Part3"]
+        },
+        "CHR_000016": {
+            "backgroundModelHiddenParts": [
+                "Dorothy",
+                "weapon",
+                "EF_A",
+                "EF_B"
+            ]
+        },
+        "CHR_000017": {
+            "backgroundModelHiddenParts": [
+                "amor",
+                "ef"
+            ]
+        },
+        "CHR_000018": {
+            "backgroundModelHiddenParts": ["Part6"]
+        },
+        "CHR_000019": {
+            "backgroundModelHiddenParts": [
+                "chara",
+                "tama"
+            ]
+        },
+        "CHR_000020": {
+            "modelHiddenParts": ["Part3"],
+            "backgroundModelHiddenParts": ["Part2"]
+        },
+        "CHR_000022": {
+            "modelHiddenParts": ["Part3"],
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000023": {
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000025": {
+            "backgroundModelHiddenParts": ["Part11"]
+        },
         "CHR_000026": {
             "modelHiddenParts": ["front_effect_G"],
             "backgroundModelHiddenParts": [
@@ -21,9 +189,151 @@
             ]
         },
         "CHR_000027": {
+            "backgroundModelHiddenParts": ["Part32"]
+        },
+        "CHR_000028": {
+            "backgroundModelHiddenParts": ["Part21"]
+        },
+        "CHR_000030": {
+            "backgroundModelHiddenParts": ["Part14"]
+        },
+        "CHR_000031": {
+            "backgroundModelHiddenParts": ["Part12"]
+        },
+        "CHR_000032": {
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000033": {
+            "modelHiddenParts": ["EF"],
+            "backgroundModelHiddenParts": ["Eir"]
+        },
+        "CHR_000035": {
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000038": {
+            "backgroundModelHiddenParts": ["Part26"]
+        },
+        "CHR_000040": {
+            "modelHiddenParts": ["Part"],
             "backgroundModelHiddenParts": [
-                "Part32"
+                "Part4",
+                "Part14"
             ]
+        },
+        "CHR_000041": {
+            "modelHiddenParts": ["flower"],
+            "backgroundModelHiddenParts": [
+                "natasha",
+                "EF"
+            ]
+        },
+        "CHR_000042": {
+            "backgroundModelHiddenParts": [
+                "Part",
+                "head_ring3",
+                "Effect_back2"
+            ]
+        },
+        "CHR_000043": {
+            "backgroundModelHiddenParts": [
+                "Part2",
+                "EF_Skill",
+                "EF_Hand"
+            ]
+        },
+        "CHR_000046": {
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000047": {
+            "modelHiddenParts": ["Part2"],
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000048": {
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000049": {
+            "backgroundModelHiddenParts": ["Part32"]
+        },
+        "CHR_000050": {
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000051": {
+            "backgroundModelHiddenParts": ["Part23"]
+        },
+        "CHR_000055": {
+            "backgroundModelHiddenParts": ["Part9"]
+        },
+        "CHR_000057": {
+            "useBackgroundModel": false
+        },
+        "CHR_000058": {
+            "backgroundModelHiddenParts": ["Part24"]
+        },
+        "CHR_000060": {
+            "backgroundModelHiddenParts": ["Part2"]
+        },
+        "CHR_000061": {
+            "backgroundModelHiddenParts": ["Part2"]
+        },
+        "CHR_000062": {
+            "backgroundModelHiddenParts": [
+                "Weapon",
+                "character",
+                "cage_front",
+                "Effect_back",
+                "Parts_A",
+                "Parts_B",
+                "Parts_C",
+                "Parts_D"
+            ]
+        },
+        "CHR_000064": {
+            "backgroundModelHiddenParts": ["Part33"]
+        },
+        "CHR_000065": {
+            "backgroundModelHiddenParts": ["Part2"]
+        },
+        "CHR_000068": {
+            "backgroundModelHiddenParts": ["Part32"]
+        },
+        "CHR_000070": {
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000071": {
+            "backgroundModelHiddenParts": ["Part3"]
+        },
+        "CHR_000072": {
+            "useBackgroundModel": false
+        },
+        "CHR_000076": {
+            "backgroundModelHiddenParts": ["Part2"]
+        },
+        "CHR_000078": {
+            "backgroundModelHiddenParts": ["Part2"]
+        },
+        "CHR_000086": {
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000095": {
+            "backgroundModelHiddenParts": ["Part14"]
+        },
+        "CHR_000108": {
+            "backgroundModelHiddenParts": ["Part"]
+        },
+        "CHR_000111": {
+            "backgroundModelHiddenParts": [
+                "chara",
+                "tubame3",
+                "tubame2",
+                "ooruri",
+                "ooruri2"
+            ]
+        },
+        "CHR_000114": {
+            "backgroundModelHiddenParts": ["Part21"]
+        },
+        "CHR_000115": {
+            "backgroundModelHiddenParts": ["Part2"]
         }
     }
 }
